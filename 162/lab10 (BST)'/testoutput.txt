@@ -1,0 +1,28 @@
+cat testoutput.txt 
+List size: 7
+Printing in-order:
+Nick, 5
+Mandy, 10
+Rose, 20
+John, 22
+Jimmy, 25
+Cander, 30
+Keller, 50
+Searching for age 30 (found: 1, not found: 0):1
+Searching for age 55(found: 1, not found: 0): 0
+Printing pre-order:
+John, 22
+Mandy, 10
+Nick, 5
+Rose, 20
+Cander, 30
+Jimmy, 25
+Keller, 50
+Printing post-order:
+Nick, 5
+Rose, 20
+Mandy, 10
+Jimmy, 25
+Keller, 50
+Cander, 30
+John, 22
