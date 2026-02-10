@@ -1,0 +1,45 @@
+Current list contents:
+0: Name: Benee, age: 30
+1: Name: James, age: 20
+Total elements: 2
+Q1. After adding elements at the end:
+0: Name: Benee, age: 30
+1: Name: James, age: 20
+2: Name: Noah, age: 24
+3: Name: Minnie, age: 34
+Total elements: 4
+Q2a. Testing adding element at given index:
+Invalid index.
+Q2b. Testing adding element at given index:
+0: Name: Rick, age: 33
+1: Name: Benee, age: 30
+2: Name: Peter, age: 18
+3: Name: James, age: 20
+4: Name: Noah, age: 24
+5: Name: Minnie, age: 34
+Total elements: 6
+Q3. Testing remove element at front:
+0: Name: Benee, age: 30
+1: Name: Peter, age: 18
+2: Name: James, age: 20
+3: Name: Noah, age: 24
+4: Name: Minnie, age: 34
+Total elements: 5
+Q4a. Testing remove element at a given index:
+0: Name: Benee, age: 30
+1: Name: Peter, age: 18
+2: Name: James, age: 20
+3: Name: Minnie, age: 34
+Total elements: 4
+Q4b. Testing remove element at a given index:
+0: Name: Benee, age: 30
+1: Name: Peter, age: 18
+2: Name: James, age: 20
+Total elements: 3
+Q5a. Testing update element matching name and age:
+Record not found.
+Q5b. Testing update element matching name and age:
+0: Name: Benee, age: 30
+1: Name: Pete, age: 19
+2: Name: James, age: 20
+Total elements: 3

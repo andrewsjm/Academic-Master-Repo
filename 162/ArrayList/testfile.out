@@ -1,0 +1,39 @@
+Original list:
+Name: John, age: 25
+Name: Mary, age: 28
+Name: John, age: 30
+Name: James, age: 23
+Q1. Testing find: 
+1
+Record not found.
+-1
+Q2. Testing removal record:
+Name: John, age: 25
+Name: Mary, age: 28
+Name: James, age: 23
+Name: Holly, age: 33
+Testing insert at the first:
+Name: Mary, age: 30
+Name: Rick, age: 19
+Name: John, age: 25
+Name: Mary, age: 28
+Name: James, age: 23
+Name: Holly, age: 33
+Testing insert at a given index between 0 and : 6
+Invalid index.
+Invalid index.
+Name: Mary, age: 30
+Name: Rick, age: 19
+Name: Philip, age: 33
+Name: John, age: 25
+Name: Mary, age: 28
+Name: James, age: 23
+Name: Holly, age: 33
+Testing printing reverse: 
+Name: Holly, age: 33
+Name: James, age: 23
+Name: Mary, age: 28
+Name: John, age: 25
+Name: Philip, age: 33
+Name: Rick, age: 19
+Name: Mary, age: 30
