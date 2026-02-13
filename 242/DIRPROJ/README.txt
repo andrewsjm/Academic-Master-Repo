@@ -1,0 +1,5 @@
+This one was really hard maybe if I had done the prep work it would have been easier, I did not get pipe or dup2 or anything besisdes opening the directory's files and taking the user's input to work.The purpose of the program is to take numbers and divide them by two.
+
+The compare part of the program only works if the names in the directory match the example files in the main directory because it only can read those. I did not realize this until a few hours ago.. 
+
+the only way to test all of it is to run the program and when prompted, take the directory name (only functioning one is test_dir1) and while it is doing the comparing the user can type any positive number and get the half back. If you type an odd number youll find it does not exit, this is to prevent the user from accidentally typing an odd number while testing.
