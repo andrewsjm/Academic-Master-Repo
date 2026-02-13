@@ -1,0 +1,50 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE Students (
+    student_id INTEGER PRIMARY KEY,
+    name TEXT
+);
+INSERT INTO Students VALUES(311953,'Jacob Andrews');
+CREATE TABLE Courses (
+    course_id INTEGER PRIMARY KEY,
+    title TEXT,
+    number INTEGER,
+    subject TEXT
+);
+INSERT INTO Courses VALUES(1,'Introduction to Algorithmic Design II',162,'CMSC');
+INSERT INTO Courses VALUES(2,'Introduction to Algorithmic Design I',160,'CMSC');
+INSERT INTO Courses VALUES(3,'Introduction to Computer Science',121,'CMSC');
+INSERT INTO Courses VALUES(4,'Introduction to English',101,'ENGL');
+INSERT INTO Courses VALUES(5,'Intro to German',101,'GERM');
+CREATE TABLE Professors (
+    professor_id INTEGER PRIMARY KEY,
+    name TEXT
+);
+INSERT INTO Professors VALUES(777,'Robert Marmorstein');
+INSERT INTO Professors VALUES(888,'Sanish Rai');
+INSERT INTO Professors VALUES(999,'Don Blaheta');
+CREATE TABLE Sections (
+    section_id INTEGER PRIMARY KEY,
+    course_id INTEGER,
+    professor_id INTEGER,
+    crn INTEGER UNIQUE,
+    number INTEGER,
+    days TEXT,
+startPeriod INTEGER,
+endPeriod INTEGER,
+FOREIGN KEY (course_id) REFERENCES Courses(course_id),
+    FOREIGN KEY (professor_id) REFERENCES Professors(professor_id)
+);
+INSERT INTO Sections VALUES(1,1,888,30071,1,'MWF',200,250);
+INSERT INTO Sections VALUES(2,2,777,30070,1,'TTh',200,315);
+INSERT INTO Sections VALUES(3,3,999,31018,1,'TTh',1230,145);
+INSERT INTO Sections VALUES(4,4,0,5000,1,'MWF',700,900);
+INSERT INTO Sections VALUES(5,5,111,2222,1,'MWF',300,400);
+CREATE TABLE Registration (
+    registration_id INTEGER PRIMARY KEY,
+    student_id INTEGER,
+    section_id INTEGER,
+    FOREIGN KEY (student_id) REFERENCES Students(student_id),
+    FOREIGN KEY (section_id) REFERENCES Sections(section_id)
+);
+COMMIT;
